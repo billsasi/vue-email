@@ -6,30 +6,12 @@
 
 ## Setup
   1. Clone this repository
-  2. Navigate to server directory and install dependencies:
+  2. Navigate to server directory and run `npm run start` to install all dependencies and start the app:
 
   ```
     cd server
-    npm install
-  ```
-
-  3. Start the server:
-  ```
     npm run start
   ```
-  This will start the server on port 3000.
-
-  4. Open another terminal at the project's root directory.
-  5. Navigate to client directory and install dependencies:
-
-  ```
-    cd client
-    npm install
-  ```
-
-  6. Start the Vue app:
-  ```
-    npm run dev
-  ```
-  7. The application will start on `http://localhost:5173`.
+  
+  3. The application will start on `http://localhost:3000`.
   
