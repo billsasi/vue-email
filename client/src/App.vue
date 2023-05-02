@@ -12,7 +12,7 @@ const endOfInbox = ref(false);
 
 async function handleLogin({ username, password }) {
   loading.value = true;
-  const res = await fetch('http://localhost:3000/api/login', {
+  const res = await fetch('/api/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ async function handleLogin({ username, password }) {
 
 async function getMessages() {
   loading.value = true;
-  const res = await fetch('http://localhost:3000/api/pull', {
+  const res = await fetch('/api/pull', {
     headers: {
       'Content-Type': 'application/json',
     },
@@ -51,7 +51,7 @@ async function getMessages() {
 }
 
 function handleLogout() {
-  fetch('http://localhost:3000/api/logout', {
+  fetch('/api/logout', {
     headers: {
       'Content-Type': 'application/json',
     },
@@ -64,7 +64,7 @@ function handleLogout() {
 
 async function fetchMore() {
   loadingMore.value = true;
-  const res = await fetch('http://localhost:3000/api/more', {
+  const res = await fetch('/api/more', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
