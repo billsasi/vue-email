@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --inspect ./server.js",
-    "build": "cd ../client && npm run build && cd ../server"
+    "start": "npm run build && nodemon --inspect ./server.js",
+    "build": "npm install && cd ../client && npm install && npm run build && cd ../server"
   },
   "author": "",
   "license": "ISC",
